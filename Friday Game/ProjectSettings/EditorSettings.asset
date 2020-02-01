@@ -8,8 +8,10 @@ EditorSettings:
   m_SerializationMode: 2
   m_LineEndingsForNewScripts: 2
   m_DefaultBehaviorMode: 1
-  m_PrefabRegularEnvironment: {fileID: 0}
-  m_PrefabUIEnvironment: {fileID: 0}
+  m_PrefabRegularEnvironment: {fileID: 102900000, guid: 11b394011160ca045b9c53ffc7a2c5e8,
+    type: 3}
+  m_PrefabUIEnvironment: {fileID: 102900000, guid: 11b394011160ca045b9c53ffc7a2c5e8,
+    type: 3}
   m_SpritePackerMode: 0
   m_SpritePackerPaddingPower: 1
   m_EtcTextureCompressorBehavior: 1
@@ -24,7 +26,7 @@ EditorSettings:
   m_EnableTextureStreamingInPlayMode: 1
   m_AsyncShaderCompilation: 1
   m_EnterPlayModeOptionsEnabled: 0
-  m_EnterPlayModeOptions: 3
+  m_EnterPlayModeOptions: 0
   m_ShowLightmapResolutionOverlay: 1
   m_UseLegacyProbeSampleCount: 0
   m_AssetPipelineMode: 1

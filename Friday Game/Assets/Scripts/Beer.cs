@@ -10,6 +10,7 @@ public class Beer : MonoBehaviour
     public int NumberOfBeersZero = 0;
     public int x, y;
 
+
     void Start()
     {
         
@@ -21,22 +22,22 @@ public class Beer : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             BeerValue += 0.01;
-        } 
+        }
 
-        if(Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             BeerZeroValue += 0.1;
         }
 
         if(BeerValue > x)
         {
-            Debug.Log(BeerValue.ToString("0"));  
+
             x++;
 		}
 
         if(BeerZeroValue > y)
         {
-            Debug.Log(BeerZeroValue.ToString("0"));  
+
             y++;
 		}
         
@@ -45,7 +46,7 @@ public class Beer : MonoBehaviour
             NumberOfBeers++;
             BeerValue = 0;
             x = 1;
-            Debug.Log(NumberOfBeers);
+
 		}
 
         if(BeerZeroValue >= 100)
@@ -54,8 +55,8 @@ public class Beer : MonoBehaviour
             BeerZeroValue = 0;
             y = 1;
             BeerValue += 5;
-            Debug.Log(NumberOfBeersZero);
-            Debug.Log(BeerValue.ToString("0"));  
+
 		}
     }
+
 }
