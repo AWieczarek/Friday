@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-public class Drink : MonoBehaviour
+public class DrinkZero : MonoBehaviour
 {
     public GameObject obj;
-    public Text beerValueText;
+    public Text beerZeroValueText;
 
     private void Awake()
     {
@@ -12,6 +12,6 @@ public class Drink : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        beerValueText.text = obj.GetComponent<Beer>().BeerValue.ToString("0") + "%";
+        beerZeroValueText.text = obj.GetComponent<Beer>().BeerZeroValue.ToString("0") + "%";
     }
 }
