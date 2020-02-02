@@ -1,17 +1,21 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class DrinkZero : MonoBehaviour
 {
     public GameObject obj;
-    public Text beerZeroValueText;
+    public TextMeshProUGUI beerZero_Score;
 
     private void Awake()
     {
+
+        beerZero_Score = GetComponent<TextMeshProUGUI>();
+
         obj = GameObject.FindGameObjectWithTag("GameController");
     }
     // Update is called once per frame
     void Update()
     {
-        beerZeroValueText.text = obj.GetComponent<Beer>().BeerZeroValue.ToString("0") + "%";
+        beerZero_Score.text = obj.GetComponent<Beer>().BeerZeroValue.ToString("0") + "%";
     }
 }
