@@ -8,9 +8,9 @@ public class Beer : MonoBehaviour
     public double BeerZeroValue = 0;
     public int NumberOfBeers = 0;
     public int NumberOfBeersZero = 0;
-    public int x, y;
-
-
+    public int x, y, z;
+    public bool isDrinkingBeer = false;
+    public bool isDrinkingBeerZero = false;
     void Start()
     {
         
@@ -22,18 +22,29 @@ public class Beer : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftArrow))
         {
             BeerValue += 0.01;
+            isDrinkingBeer = true;
+        }
+        else
+        {
+            isDrinkingBeer = false;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
             BeerZeroValue += 0.1;
+            isDrinkingBeerZero = true;
+        }
+        else
+        {
+            isDrinkingBeerZero = false;
         }
 
         if(BeerValue > x)
         {
 
             x++;
-		}
+
+        }
 
         if(BeerZeroValue > y)
         {
@@ -55,8 +66,7 @@ public class Beer : MonoBehaviour
             BeerZeroValue = 0;
             y = 1;
             BeerValue += 5;
-
 		}
+        
     }
-
 }

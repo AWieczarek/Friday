@@ -41,9 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player
+    uniqueID: 1652846367
+    locked: 0
   - name: Beer
     uniqueID: 2344600699
     locked: 0
-  - name: Player
-    uniqueID: 1652846367
+  - name: Background
+    uniqueID: 354279703
     locked: 0

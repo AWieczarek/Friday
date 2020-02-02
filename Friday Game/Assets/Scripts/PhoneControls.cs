@@ -17,10 +17,6 @@ public class PhoneControls : MonoBehaviour
             }
             else
             {
-                isDrinkingBeer = false;
-            }
-            if(touchPosition.x < 0)
-            {
                 beer.BeerZeroValue += 1;
             }
         }
