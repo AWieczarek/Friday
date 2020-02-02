@@ -14,10 +14,12 @@ public class PhoneControls : MonoBehaviour
             if (touchPosition.x > 0)
             {
                 beer.BeerValue += 1;
+                beer.isDrinkingBeer = true;
             }
             else
             {
                 beer.BeerZeroValue += 1;
+                beer.isDrinkingBeerZero = true;
             }
         }
         
