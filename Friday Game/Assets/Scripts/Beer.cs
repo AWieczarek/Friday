@@ -11,6 +11,8 @@ public class Beer : MonoBehaviour
     public int x, y, z;
     public bool isDrinkingBeer = false;
     public bool isDrinkingBeerZero = false;
+    public bool isDoorOpen = false;
+    public bool isButtonDown = false;
     void Start()
     {
         
@@ -37,6 +39,15 @@ public class Beer : MonoBehaviour
         else
         {
             isDrinkingBeerZero = false;
+        }
+
+        if (Input.GetKey(KeyCode.Space) | isButtonDown)
+        {
+            isDoorOpen = true;
+        }
+        else
+        {
+            isDoorOpen = false;
         }
 
         if(BeerValue > x)
@@ -67,6 +78,14 @@ public class Beer : MonoBehaviour
             y = 1;
             BeerValue += 5;
 		}
-        
     }
-}
+
+    public void FBIOPENUP()
+    {
+        isButtonDown = true;
+    }
+    public void FBIOPENDown()
+    {
+        isButtonDown = false;
+    }
+    }
