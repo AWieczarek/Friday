@@ -13,6 +13,7 @@ public class Beer : MonoBehaviour
     public bool isDrinkingBeerZero = false;
     public bool isDoorOpen = false;
     public bool isButtonDown = false;
+    public ParentsEnter pe;
     void Start()
     {
         
@@ -25,6 +26,7 @@ public class Beer : MonoBehaviour
         {
             BeerValue += 0.01;
             isDrinkingBeer = true;
+            IsParents();
         }
         else
         {
@@ -52,7 +54,7 @@ public class Beer : MonoBehaviour
 
         if(BeerValue > x)
         {
-
+           
             x++;
 
         }
@@ -78,6 +80,7 @@ public class Beer : MonoBehaviour
             y = 1;
             BeerValue += 5;
 		}
+
     }
 
     public void FBIOPENUP()
@@ -88,4 +91,13 @@ public class Beer : MonoBehaviour
     {
         isButtonDown = false;
     }
+
+    public void IsParents()
+    {
+        if (pe.parents)
+        {
+            BeerValue = 0;
+            x = 1;
+        }
     }
+}

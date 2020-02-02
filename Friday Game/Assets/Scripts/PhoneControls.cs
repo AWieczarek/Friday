@@ -11,12 +11,12 @@ public class PhoneControls : MonoBehaviour
         {
             Touch touch = Input.GetTouch(0);
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
-            if (touchPosition.x > 0)
+            if (touchPosition.x > 5)
             {
                 beer.BeerValue += 1;
                 beer.isDrinkingBeer = true;
             }
-            else
+            if (touchPosition.x < -5)
             {
                 beer.BeerZeroValue += 1;
                 beer.isDrinkingBeerZero = true;

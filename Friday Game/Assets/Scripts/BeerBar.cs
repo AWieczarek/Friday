@@ -5,6 +5,7 @@ public class BeerBar : MonoBehaviour
 {
     public Image CurentBeer;
     public Beer beer;
+    public ParentsEnter pe;
     public int x = 1;
 
     public double maxBeerValue = 100;
@@ -23,6 +24,12 @@ public class BeerBar : MonoBehaviour
         }
 
         if (beer.BeerValue >= 99)
+        {
+            x = 1;
+            UpdateBeerBar();
+        }
+
+        if(pe.parents)
         {
             x = 1;
             UpdateBeerBar();
