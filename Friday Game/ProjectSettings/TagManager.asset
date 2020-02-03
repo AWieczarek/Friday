@@ -44,9 +44,15 @@ TagManager:
   - name: Player
     uniqueID: 1652846367
     locked: 0
+  - name: Brwi
+    uniqueID: 1462258427
+    locked: 0
   - name: Beer
     uniqueID: 2344600699
     locked: 0
   - name: Background
     uniqueID: 354279703
+    locked: 0
+  - name: New Layer
+    uniqueID: 2760046349
     locked: 0
