@@ -7,3 +7,5 @@ This game was suposed to be a small project before matura exam. Lack of time and
 - shop with new items and multipliers
 - adverts
 - better "parents" system
+
+<img src="1636982094580.jpg" width="100%" height="auto" /> 
